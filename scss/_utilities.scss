@@ -1,0 +1,19 @@
+
+.h-50vh {
+    height: 50vh;
+}
+
+.max-vh-90 {
+    max-height: 90vh;
+}
+
+.pos-rel-y {
+    bottom: 3rem;
+}
+
+@mixin flex-type($dir, $wrap, $just_cont, $align_items) {
+    display: flex;
+    flex-flow: $dir $wrap;
+    justify-content: $just_cont;
+    align-items: $align_items;
+}

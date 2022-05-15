@@ -1,0 +1,188 @@
+//razas
+%spacing {
+    margin: 8em 0 3em 0;
+}
+
+
+.mainRazas {
+    @extend %spacing;
+
+    h1 {
+        font-size: 5em;
+    }
+
+    .razas {
+        @include flex-type(column, nowrap, center, center);
+        padding: 3vh 0;
+        border-bottom: 1px dotted $color_1;
+    
+        .col_2 {
+            @include flex-type(column, nowrap, center, center);
+            padding-bottom: 3vh;
+        }
+    
+        h4 {
+            font-size: 3rem;
+            color: $color_2;
+        }
+    
+        h5 {
+            font-size: 1.5rem;
+            color: darken($color_4, 50);
+            padding-bottom: 1.5vh;
+        }
+
+        .col_1 {
+            min-width: 300px;
+            margin: 1em 5em;
+
+            img {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    }
+}
+
+// clases
+.mainClases {
+    @extend %spacing;
+
+    h1 {
+        font-size: 5em;
+    }
+
+    .profWrapper {
+        display: grid;
+        grid-template-areas:
+        'hipnotizador hipnotizador'
+        'guardian guardian'
+        'nigromante nigromante'
+        'guardabosques guardabosques'
+        'elementalista elementalista'
+        'guerrero guerrero'
+        'ladron ladron'
+        'ingeniero ingeniero'
+        'retornado retornado';
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, auto);
+        gap: 20px;
+
+        .profHipnotizador {
+            grid-area: hipnotizador;
+        }
+        
+        .profGuardian {
+            grid-area: guardian;
+        }
+        
+        .profNigromante {
+            grid-area: nigromante;
+        }
+        
+        .profGuardabosques {
+            grid-area: guardabosques;
+        }
+        
+        .profElementalista {
+            grid-area: elementalista;
+        }
+        
+        .profGuerrero {
+            grid-area: guerrero;
+        }
+        
+        .profLadron {
+            grid-area: ladron;
+        }
+        
+        .profIngeniero {
+            grid-area: ingeniero;
+        }
+        
+        .profRetornado {
+            grid-area: retornado;
+        }
+        
+        .prof {
+            padding: 5vh 0;
+            border-bottom: 1px dotted $color_1;
+
+            h4 {
+                color: $color_2;
+                text-align: center;
+                font-size: 2em;
+            }
+
+            .col_1 {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+// noticias
+.wrapperNoticias {
+    @extend %spacing;
+    padding: 3em 0;
+
+    h1 {
+        font-size: 5em;
+    }
+}
+
+// links utiles 
+.mainLinks {
+    @extend %spacing;
+
+    h1 {
+        font-size: 5em;
+    }
+
+    .wrapperCardLinks {
+        @include flex-type(row, wrap, center, flex-start);
+        margin-top: 4vh;
+        gap: 20px;
+
+        .cardLinks {
+            border: 1px solid $color_4;
+            padding: 2vh 2vw;
+            width: 100%;
+            max-width: 320px;
+
+            h4 {
+                color: $color_2;
+            }
+
+            ul {
+                padding-left: 20px;
+
+                li {
+                    line-height: 150%;
+
+                    a {
+                        color: $color_2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//mundo
+.mainMundo {
+    @extend %spacing;
+}
+
+//jefes
+.mainJefes {
+    min-height: 80vh;
+    @extend %spacing;
+}
+
+//personajes
+.mainPersonajes {
+    min-height: 80vh;
+    @extend %spacing;
+}

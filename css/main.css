@@ -1,0 +1,715 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+body {
+  background-color: #5D00C4;
+  font-family: "Lato", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bebas Neue", cursive !important;
+}
+
+.mainIndex h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 3.5em;
+}
+
+* .masInfo a {
+  color: #BA05BB !important;
+  text-transform: uppercase;
+}
+
+* .masInfo a:hover {
+  -webkit-text-decoration: underline wavy;
+          text-decoration: underline wavy;
+}
+
+.nav-item a {
+  font-family: "Bebas Neue", cursive !important;
+  letter-spacing: 1px;
+}
+
+.dropdown a {
+  font-family: "Bebas Neue", cursive !important;
+  letter-spacing: 1px;
+}
+
+footer {
+  background-color: #fff;
+}
+
+footer .footerWrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footerWrapper .footerNav,
+footer .footerWrapper .footerSocials,
+footer .footerWrapper .footerAnet {
+  width: 100%;
+  min-height: 18vh;
+}
+
+footer .footerWrapper .footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+}
+
+footer .footerWrapper .footerNav ul li {
+  font-size: 1.3rem;
+  list-style-type: none;
+}
+
+footer .footerWrapper .footerNav ul li:hover {
+  font-size: 1.4rem;
+  color: #BA05BB;
+}
+
+footer .footerWrapper .footerNav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer .footerWrapper .footerSocials {
+  border-bottom: 1px dotted #0000005c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+footer .footerWrapper .footerSocialsIcon {
+  width: 65px;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+footer .footerWrapper .footerSocialsIcon img {
+  width: 100%;
+}
+
+footer .footerWrapper .footerSocialsIcon:hover {
+  width: 70px;
+}
+
+footer .footerWrapper .footerAnet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .footerWrapper .footerAnetLogoWrap {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.h-50vh {
+  height: 50vh;
+}
+
+.max-vh-90 {
+  max-height: 90vh;
+}
+
+.pos-rel-y {
+  bottom: 3rem;
+}
+
+.carousel_caption {
+  background-color: #5D00C4;
+  padding: 5px;
+  margin-bottom: 2em;
+}
+
+.carousel_caption h5 {
+  font-size: 2em;
+}
+
+.carousel_caption p {
+  font-size: larger;
+  margin-bottom: 0;
+}
+
+.wrapper_explora {
+  background-image: url(../img/Concept07.jpg);
+  background-position: center;
+  background-color: #5D00C4;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.card_explora {
+  width: 220px;
+  height: 330px;
+  border: 10px solid #5D00C4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #5D00C4;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.card_explora p {
+  background-color: #5D00C4;
+  position: relative;
+  bottom: -16px;
+  opacity: 0;
+  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+}
+
+.card_explora a {
+  color: inherit;
+}
+
+.card_1 {
+  background-image: url("../img/Concept07.jpg");
+}
+
+.card_2 {
+  background-image: url("../img/caithe.jpg");
+}
+
+.card_3 {
+  background-image: url("../img/LegendaryMed.jpg");
+}
+
+.card_4 {
+  background-image: url("../img/LegendaryLight.jpg");
+}
+
+.card_5 {
+  background-image: url("../img/boss_1.jpg");
+}
+
+.card_3 {
+  background-position-x: 450px;
+}
+
+.card_4 {
+  background-position-x: 350px;
+}
+
+.novedades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  gap: 1.5em;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.novedades h4 {
+  color: #BA05BB;
+  margin-bottom: 0;
+}
+
+.novedades p {
+  color: #383838;
+}
+
+.novedades:hover {
+  background-color: #eaeaea;
+}
+
+.novedadesNoticia {
+  border-left: 1px dotted #B7B7B7;
+  padding-left: 2em;
+}
+
+.wrapperReviews {
+  background-image: url(../img/Concept07.jpg);
+  background-position: center;
+  background-color: #B7B7B7;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.wrapperReviews h2 {
+  border-bottom: 5px solid #BA05BB;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapperReviews h4 {
+  padding: 2vh 0;
+  text-align: center;
+  color: #B7B7B7;
+}
+
+.wrapperReviews .col_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.wrapperReviews .col_2 {
+  width: 100%;
+  min-height: 46vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperReviews .col_2 .rev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  width: 205px;
+  height: 285px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapperReviews .col_2 .rev .img_cont {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: 4px solid white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperReviews .col_2 .rev .img_cont:hover {
+  -webkit-box-shadow: inset 0px 0px 15px 5px #57004bcb;
+          box-shadow: inset 0px 0px 15px 5px #57004bcb;
+}
+
+.quote_,
+.number {
+  color: #fff;
+}
+
+.quote_ {
+  font-style: italic;
+}
+
+.number {
+  font-size: 30px;
+}
+
+.mainRazas, .mainClases, .wrapperNoticias, .mainLinks, .mainMundo, .mainJefes, .mainPersonajes {
+  margin: 8em 0 3em 0;
+}
+
+.mainRazas h1 {
+  font-size: 5em;
+}
+
+.mainRazas .razas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3vh 0;
+  border-bottom: 1px dotted #BA05BB;
+}
+
+.mainRazas .razas .col_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 3vh;
+}
+
+.mainRazas .razas h4 {
+  font-size: 3rem;
+  color: #5D00C4;
+}
+
+.mainRazas .razas h5 {
+  font-size: 1.5rem;
+  color: #383838;
+  padding-bottom: 1.5vh;
+}
+
+.mainRazas .razas .col_1 {
+  min-width: 300px;
+  margin: 1em 5em;
+}
+
+.mainRazas .razas .col_1 img {
+  width: 100%;
+  max-width: 350px;
+}
+
+.mainClases h1 {
+  font-size: 5em;
+}
+
+.mainClases .profWrapper {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'hipnotizador hipnotizador' 'guardian guardian' 'nigromante nigromante' 'guardabosques guardabosques' 'elementalista elementalista' 'guerrero guerrero' 'ladron ladron' 'ingeniero ingeniero' 'retornado retornado';
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[9];
+      grid-template-rows: repeat(9, auto);
+  gap: 20px;
+}
+
+.mainClases .profWrapper .profHipnotizador {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: hipnotizador;
+}
+
+.mainClases .profWrapper .profGuardian {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: guardian;
+}
+
+.mainClases .profWrapper .profNigromante {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nigromante;
+}
+
+.mainClases .profWrapper .profGuardabosques {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: guardabosques;
+}
+
+.mainClases .profWrapper .profElementalista {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: elementalista;
+}
+
+.mainClases .profWrapper .profGuerrero {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: guerrero;
+}
+
+.mainClases .profWrapper .profLadron {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: ladron;
+}
+
+.mainClases .profWrapper .profIngeniero {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: ingeniero;
+}
+
+.mainClases .profWrapper .profRetornado {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: retornado;
+}
+
+.mainClases .profWrapper .prof {
+  padding: 5vh 0;
+  border-bottom: 1px dotted #BA05BB;
+}
+
+.mainClases .profWrapper .prof h4 {
+  color: #5D00C4;
+  text-align: center;
+  font-size: 2em;
+}
+
+.mainClases .profWrapper .prof .col_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapperNoticias {
+  padding: 3em 0;
+}
+
+.wrapperNoticias h1 {
+  font-size: 5em;
+}
+
+.mainLinks h1 {
+  font-size: 5em;
+}
+
+.mainLinks .wrapperCardLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 4vh;
+  gap: 20px;
+}
+
+.mainLinks .wrapperCardLinks .cardLinks {
+  border: 1px solid #B7B7B7;
+  padding: 2vh 2vw;
+  width: 100%;
+  max-width: 320px;
+}
+
+.mainLinks .wrapperCardLinks .cardLinks h4 {
+  color: #5D00C4;
+}
+
+.mainLinks .wrapperCardLinks .cardLinks ul {
+  padding-left: 20px;
+}
+
+.mainLinks .wrapperCardLinks .cardLinks ul li {
+  line-height: 150%;
+}
+
+.mainLinks .wrapperCardLinks .cardLinks ul li a {
+  color: #5D00C4;
+}
+
+.mainJefes {
+  min-height: 80vh;
+}
+
+.mainPersonajes {
+  min-height: 80vh;
+}
+
+@media screen and (min-width: 655px) {
+  footer .footerWrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  footer .footerWrapper .footerNav {
+    visibility: visible;
+    position: static;
+  }
+  footer .footerWrapper .footerSocials {
+    border-bottom: none;
+  }
+  footer .footerWrapper .footerAnetLogoWrap {
+    width: 100px;
+  }
+  footer .footerWrapper .footerAnetLogoWrap img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card_explora:hover {
+    border-color: #5D00C4;
+  }
+  .card_explora:hover p {
+    opacity: 1;
+  }
+  .mainClases .profWrapper {
+        grid-template-areas: 'hipnotizador guardian' 'nigromante guardabosques' 'elementalista guerrero' 'ladron ingeniero' 'retornado retornado';
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
+    max-width: 1200px;
+  }
+  .mainClases .profWrapper .prof {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+    border: none;
+  }
+  .mainClases .profWrapper .prof .col_1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .mainClases .profWrapper .prof .col_2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+  .mainClases .profWrapper .profRetornado {
+    width: 50%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .mainRazas .razas {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .mainRazas .razas .col_2 {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+}

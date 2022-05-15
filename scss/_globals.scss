@@ -1,0 +1,141 @@
+// estilos globales
+body {
+    background-color: $color_2;
+    font-family: $font_2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font_1;
+}
+
+.mainIndex {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+h2 {
+    font-size: 3.5em;
+}
+
+* {
+    .masInfo {
+        a {
+            color: $color_1 !important;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            text-decoration: underline wavy;
+        }
+    }
+}
+
+// navbar
+@mixin nav-config ($font) {
+    font-family: $font;
+    letter-spacing: 1px;
+}
+
+.nav-item {
+    a {
+        @include nav-config($font_1);
+    }
+}
+
+.dropdown {
+    a {
+        @include nav-config($font_1);
+    }
+}
+
+//footer
+footer {
+    background-color: #fff;
+
+    .footerWrapper {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+
+        .footerNav,
+        .footerSocials,
+        .footerAnet {
+            width: 100%;
+            min-height: 18vh;
+        }
+
+        .footerNav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            position: absolute;
+            right: 0;
+
+            visibility: hidden;
+
+            ul {
+                li {
+                    font-size: 1.3rem;
+                    list-style-type: none;
+
+                    &:hover {
+                        font-size: 1.4rem;
+                        color: $color_1;
+                    }
+
+                    a {
+                        color: inherit;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .footerSocials {
+            border-bottom: 1px dotted #0000005c;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            flex: 2;
+
+            &Icon {
+                width: 65px;
+                padding: 8px;
+                border-radius: 50%;
+
+                img {
+                    width: 100%;
+                }
+
+                &:hover {
+                    width: 70px;
+                }
+            }
+
+        }
+
+        .footerAnet {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+
+            &LogoWrap {
+                width: min-content;
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+@media screen and (min-width: 655px) {
+    footer {
+        .footerWrapper {
+            flex-flow: row nowrap;
+
+            .footerNav {
+                visibility: visible;
+                position: static;
+            }
+
+            .footerSocials {
+                border-bottom: none;
+            }
+
+            .footerAnet {
+                &LogoWrap {
+                    width: 100px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    //index
+    .card_explora:hover {
+        border-color: $color_2;
+
+        p {
+            opacity: 1;
+        }
+    }
+
+    //clases
+    .mainClases {
+        .profWrapper {
+            grid-template-areas:
+            'hipnotizador guardian'
+            'nigromante guardabosques'
+            'elementalista guerrero'
+            'ladron ingeniero'
+            'retornado retornado'
+            ;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, auto);
+            max-width: 1200px;
+
+            .prof {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                border: none;
+
+                .col_1 {
+                    display: flex;
+                    justify-content: end;
+                }
+
+                .col_2 {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: flex-start;
+                    text-align: left;
+                }
+
+                &Retornado {
+                    width: 50%;
+                    justify-self: center;
+                }
+            }
+        }
+    }   
+
+    //razas
+    .mainRazas {
+        .razas {
+            flex-flow: row nowrap;
+        
+            .col_2 {
+                align-items: flex-start;
+                text-align: left;
+            }
+        }
+    }
+}
